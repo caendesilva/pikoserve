@@ -1,4 +1,4 @@
-# pikoserve - A truly tiny framework for PHP microservices
+# 🍦 Pikoserve - A truly tiny framework for PHP microservices
 
 ## About
 
