@@ -1,4 +1,9 @@
 # 🍦 Pikoserve - A truly tiny framework for PHP microservices
+<p>
+    <a href="https://github.com/caendesilva/pikoserve/blob/master/LICENSE.md"> <img style="display: inline; margin: 4px 2px;" src="https://img.shields.io/github/license/hydephp/hyde" alt="License MIT"> </a>
+    <a href="https://github.com/caendesilva/pikoserve/blob/master/Piko.php"> <img style="display: inline; margin: 4px 2px;" src="https://img.shields.io/github/size/caendesilva/pikoserve/Piko.php" alt="Class Size"> </a>
+    <a href="https://github.styleci.io/repos/484192816?branch=master"><img style="display: inline; margin: 4px 2px;" src="https://github.styleci.io/repos/484192816/shield?branch=master" alt="StyleCI Status"></a>
+</p>
 
 ## About
 
