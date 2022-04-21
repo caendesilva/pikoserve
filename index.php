@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require_once 'Piko.php';
 
@@ -10,4 +10,4 @@ class Main extends App
     }
 }
 
-Piko::boot(new Main);
+Piko::boot(new Main());
