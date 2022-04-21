@@ -2,7 +2,7 @@
 
 class Piko
 {
-    public const VERSION = '0.1.0';
+    public const VERSION = '1.0.0';
 
     public static function boot(App $main, ?Closure $callback = null)
     {
