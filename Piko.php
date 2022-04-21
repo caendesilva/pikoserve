@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 class Piko
 {
-	public const VERSION = '0.1.0';
+    public const VERSION = '0.1.0';
 
-	public static function boot(App $main, ?Closure $callback = null)
+    public static function boot(App $main, ?Closure $callback = null)
     {
         header('Content-Type: application/json');
 
@@ -28,11 +28,10 @@ class Response
         header("HTTP/1.1 $statusCode $statusMessage");
 
         $response = array_merge([
-            'statusCode' => $statusCode,
+            'statusCode'    => $statusCode,
             'statusMessage' => $statusMessage,
         ], $data);
 
         echo json_encode($response);
     }
 }
-
