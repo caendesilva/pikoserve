@@ -11,6 +11,13 @@ At its core, Pikoserve is a starter template for creating tiny stateless API ser
 ## Installation
 Since it is so lightweight you can get started by just downloading the Piko.php file (or copying and pasting it), then reference it in a PHP file (usually index.php). If you want you can even use the Piko.php file as your index.php code, just place your own code under the Piko class. Though I prefer to keep it separate to reduce clutter.
 
+To get started quickly, you can use Composer or Git.
+
+```bash
+composer create-project caendesilva/pikoserve
+git clone https://github.com/caendesilva/pikoserve
+```
+
 ## Usage
 
 Create an index.php file containing the Main class. Require the Piko.php file, and write your code in the Main class. Then call Piko::boot() with the Main class. Piko will then send the headers and execute the handle method and return a JSON Response.
