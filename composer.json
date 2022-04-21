@@ -1,0 +1,12 @@
+{
+    "name": "caendesilva/pikoserve",
+    "description": "A truly tiny framework for PHP microservices",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Caen De Silva",
+            "email": "caen@desilva.se"
+        }
+    ],
+    "require": {}
+}
