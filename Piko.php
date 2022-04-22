@@ -65,4 +65,3 @@ class Request
         return (array) static::get();
     }
 }
-
