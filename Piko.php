@@ -38,9 +38,9 @@ class Response
 
 class Request
 {
-    public array $data;
     public string $method;
     public string $path;
+    public array $data;
 
     public function __construct(array $data = [])
     {
