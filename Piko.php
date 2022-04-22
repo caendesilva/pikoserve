@@ -2,7 +2,7 @@
 
 class Piko
 {
-    public const VERSION = '1.0.2';
+    public const VERSION = '1.1.0-dev';
 
     public static function boot(App $main, ?Closure $callback = null)
     {
@@ -35,3 +35,25 @@ class Response
         echo json_encode($response);
     }
 }
+
+class Request
+{
+    public array $data;
+    public string $method;
+    public string $path;
+
+    public function __construct(array $data = [])
+    {
+        $this->data = $data;
+
+        $this->method = $_SERVER['REQUEST_METHOD'];
+        $this->path = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+    }
+
+    public function __get(string $key): ?string
+    {
+        return $this->data[$key] ?? null;
+    }
+}
+
+$request = new Request($_REQUEST);
