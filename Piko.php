@@ -54,6 +54,15 @@ class Request
     {
         return $this->data[$key] ?? null;
     }
+
+    public static function get(): Request
+    {
+        return new self($_REQUEST);
+    }
+
+    public static function array(): array
+    {
+        return (array) static::get();
+    }
 }
 
-$request = new Request($_REQUEST);
